@@ -1,0 +1,6 @@
+{
+    "require": {
+        "dg/mysql-dump": "^1.5",
+        "nette/neon": "^3.1"
+    }
+}

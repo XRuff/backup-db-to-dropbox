@@ -1,0 +1,10 @@
+parameters:
+    dropboxToken: 
+    dataFolder: '/data'
+    database:
+        server: localhost
+        user: root
+        password: 
+    databases:
+        - my_database
+        - my_second_database

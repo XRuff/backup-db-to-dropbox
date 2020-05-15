@@ -1,6 +1,20 @@
 {
+    "name": "xruff/backup-db-to-dropbox",
+    "description": "Php script to backup gzipped databases into dropbox folder. Using Nette.",
     "require": {
         "dg/mysql-dump": "^1.5",
-        "nette/neon": "^3.1"
+        "nette/neon": "^3.1",
+        "nette/utils": "^3.1"
+    },
+    "require-dev": {
+        "vanio/coding-standards": "^0.1@dev",
+        "phpstan/phpstan-nette": "^0.12"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "phpstan": "phpstan analyse --level 6 --configuration tests/phpstan.neon src",
+        "lint": "\"vendor/bin/phpcs\" --standard=tests/ruleset.xml --extensions=php --encoding=utf-8 --ignore=vendor .",
+        "fix": "\"vendor/bin/phpcbf\" --standard=tests/ruleset.xml --extensions=php --encoding=utf-8 --no-patch --ignore=vendor ."
     }
 }

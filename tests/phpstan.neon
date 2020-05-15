@@ -1,0 +1,9 @@
+includes:
+	- ../vendor/phpstan/phpstan-nette/extension.neon
+
+parameters:
+    autoload_directories:
+        - ../src
+    excludes_analyse:
+       - ../vendor/**/tests/*
+    ignoreErrors:

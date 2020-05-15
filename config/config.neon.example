@@ -1,0 +1,15 @@
+parameters:
+    dataFolder: '/data'
+    dateFormat: Y-m-d-h-i-s # optional, default is Y-m-d-h-i-s
+    compress: yes # optional, default is yes
+    dropbox:
+        token:
+        dateFolders: yes # optional, default is yes
+        verbose: no # optional, default is no
+    database:
+        server: 127.0.0.1
+        user: root
+        password:
+    databases:
+        - my_database
+        - my_second_database

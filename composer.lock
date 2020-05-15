@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "776d470b3631805e09a3dfef6b83a225",
+    "content-hash": "056e70057d9cf10c1074232e6fa8befc",
     "packages": [
         {
             "name": "dg/mysql-dump",
@@ -520,6 +520,8 @@
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=7.1"
+    },
     "platform-dev": []
 }

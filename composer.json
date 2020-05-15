@@ -1,6 +1,14 @@
 {
     "name": "xruff/backup-db-to-dropbox",
     "description": "Php script to backup gzipped databases into dropbox folder. Using Nette.",
+    "license": [
+        "MIT"
+    ],
+    "authors": [
+        {
+            "name": "Pavel Lauko"
+        }
+    ],
     "require": {
         "dg/mysql-dump": "^1.5",
         "nette/neon": "^3.1",
@@ -9,6 +17,11 @@
     "require-dev": {
         "vanio/coding-standards": "^0.1@dev",
         "phpstan/phpstan-nette": "^0.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "ServerBackup\\": "src"
+        }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
